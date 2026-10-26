@@ -1,0 +1,19 @@
+{
+  "name": "Chobots-Inspired World",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Local game",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  }
+}
